@@ -496,10 +496,6 @@ footer {
 .footer-links a:hover {
     color: var(--primary-color);
 }
-#ref{
-    color: rgb(71, 71, 71);
-    font-weight: bold;
-}
 
 /* Responsive Design */
 @media (max-width: 992px) {
