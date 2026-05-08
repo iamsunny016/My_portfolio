@@ -102,6 +102,15 @@ const Navbar = () => {
                 </a>
               ))}
               <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-lg font-medium text-gray-300 hover:text-white py-2 border-b border-white/5"
+              >
+                Resume
+              </a>
+              <a
                 href="#contact"
                 onClick={() => setMobileMenuOpen(false)}
                 className="mt-4 px-6 py-3 rounded-xl bg-gradient-to-r from-neon-blue to-neon-purple text-white text-center font-medium shadow-[0_0_15px_rgba(0,240,255,0.3)]"
