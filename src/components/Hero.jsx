@@ -66,7 +66,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-gray-200 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
             
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="group px-8 py-4 rounded-xl border border-white/20 bg-white/5 hover:bg-white/10 text-white font-semibold text-lg backdrop-blur-sm w-full sm:w-auto transition-all duration-300 flex items-center justify-center gap-2">
+            <a href="/resume" target="_blank" rel="noopener noreferrer" className="group px-8 py-4 rounded-xl border border-white/20 bg-white/5 hover:bg-white/10 text-white font-semibold text-lg backdrop-blur-sm w-full sm:w-auto transition-all duration-300 flex items-center justify-center gap-2">
               <Download size={20} className="group-hover:-translate-y-1 transition-transform" />
               Resume
             </a>
