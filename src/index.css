@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-blue: #00f0ff;
+  --color-neon-purple: #8a2be2;
+  --color-dark-bg: #030305;
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+  --color-glass-bg: rgba(255, 255, 255, 0.03);
+  
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Outfit", system-ui, sans-serif;
+}
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-[var(--color-dark-bg)] text-white font-sans antialiased selection:bg-neon-purple/30 selection:text-white overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  
+  .glass-card {
+    @apply bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.3)];
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-neon-purple;
+  }
+
+  .bg-glow {
+    @apply absolute w-[500px] h-[500px] rounded-full blur-[120px] opacity-30 pointer-events-none;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Hide default cursor to use custom cursor later (on desktop only) */
+@media (min-width: 1024px) {
+  /* Commenting out for now, let's keep default cursor to ensure usability unless requested. The user requested Custom Cursor, we will implement it via React.
+  body {
+    cursor: none;
+  }
+  a, button, input, textarea {
+    cursor: none;
+  } */
+}
+
+/* Fix browser autofill background in dark mode */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+  caret-color: white;
+}
