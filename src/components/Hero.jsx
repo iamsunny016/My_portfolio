@@ -46,15 +46,19 @@ const Hero = () => {
           </motion.div>
           
           <motion.h1 variants={itemVariants} className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-4 sm:mb-6 leading-tight">
-            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-500">Rajnish Kumar</span>
+            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-500">Rajnish Singh</span>
           </motion.h1>
           
-          <motion.h2 variants={itemVariants} className="text-2xl md:text-3xl lg:text-4xl font-display font-medium text-gray-400 mb-8">
-            <span className="text-gradient font-semibold">Full Stack Developer</span> & AI Enthusiast
+          <motion.h2 variants={itemVariants} className="text-xl md:text-2xl lg:text-3xl font-display font-medium text-gray-400 mb-8 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+            <span className="text-gradient font-semibold">Frontend Developer</span> 
+            <span className="hidden sm:inline text-gray-600">|</span> 
+            <span>UI/UX Enthusiast</span>
+            <span className="hidden sm:inline text-gray-600">|</span> 
+            <span>Web App Developer</span>
           </motion.h2>
           
           <motion.p variants={itemVariants} className="text-lg text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-            I craft premium digital experiences and intelligent systems. Specializing in modern web technologies and AI integrations to solve complex problems with elegant code.
+            I craft premium digital experiences and responsive web applications. Specializing in modern frontend technologies and translating UI/UX concepts into clean, maintainable code.
           </motion.p>
           
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-6 w-full">

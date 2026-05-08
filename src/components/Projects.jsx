@@ -5,36 +5,28 @@ import { ExternalLink, GitBranch as Github, Sparkles } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: 'Grihmullya - AI House Price Prediction',
-      description: 'A high-fidelity property intelligence suite. Features a Pan-India Neural Engine for precise price predictions, AI-driven architectural renders, and automated valuation reports.',
+      title: 'Myntra E-Commerce Clone',
+      description: 'Responsive product listing with dynamic filtering and add-to-cart. Secure checkout flow with persistent cart using localStorage. Deployed on Netlify; version-controlled via GitHub.',
       image: 'bg-gradient-to-br from-indigo-900 via-purple-900 to-black',
-      tech: ['Next.js', 'FastAPI', 'Python', 'Machine Learning', 'Tailwind'],
+      tech: ['HTML5', 'CSS3', 'JavaScript'],
       demo: '#',
-      github: 'https://github.com/iamsunny016/Grihmullya-House_price_prediction'
+      github: '#'
     },
     {
-      title: 'Aarogya Clinic Booking System',
-      description: 'Premium Appointment Booking System. Features a modern Next.js UI, automated patient & doctor email alerts with Google Calendar reminders, and a powerful Admin Dashboard.',
+      title: 'Task Management App',
+      description: 'Intuitive drag-and-drop interface for task and team management. Multi-category status tracking with priority assignment. Mobile-first responsive design across all screen sizes.',
       image: 'bg-gradient-to-br from-emerald-900 via-teal-900 to-black',
-      tech: ['Next.js', 'MongoDB', 'Resend', 'Tailwind CSS'],
+      tech: ['HTML5', 'CSS3', 'JavaScript'],
       demo: '#',
-      github: 'https://github.com/iamsunny016/Clinic'
+      github: '#'
     },
     {
-      title: 'Myntra Clone',
-      description: 'A responsive e-commerce platform clone of Myntra focusing on user interface design and core shopping functionalities.',
+      title: 'Weather Dashboard',
+      description: 'Real-time weather via third-party REST API (Fetch + Promises). Dynamic 5-day forecast with temperature and location data. Clean responsive UI with error handling for invalid queries.',
       image: 'bg-gradient-to-br from-blue-900 via-cyan-900 to-black',
-      tech: ['HTML', 'CSS', 'JavaScript'],
+      tech: ['JavaScript', 'REST API', 'CSS3'],
       demo: '#',
-      github: 'https://github.com/iamsunny016/Myntra_clone'
-    },
-    {
-      title: 'Premium Portfolio',
-      description: 'This very website. A futuristic, cinematic portfolio designed to showcase projects with high-end micro-interactions and smooth scrolling.',
-      image: 'bg-gradient-to-br from-gray-800 via-gray-900 to-black',
-      tech: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion'],
-      demo: '#',
-      github: 'https://github.com/iamsunny016/My_portfolio'
+      github: '#'
     }
   ];
 
@@ -55,7 +47,7 @@ const Projects = () => {
             <div className="w-20 h-1 bg-gradient-to-r from-neon-blue to-neon-purple rounded-full"></div>
           </div>
           <p className="text-gray-400 max-w-md mt-6 md:mt-0 text-lg">
-            A selection of my recent projects focusing on AI integration and premium web experiences.
+            A selection of my recent frontend projects focusing on responsive design, modern UI/UX, and robust interactivity.
           </p>
         </motion.div>
 
