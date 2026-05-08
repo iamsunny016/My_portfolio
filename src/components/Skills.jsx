@@ -4,10 +4,14 @@ import { FileCode2, Paintbrush, FileJson, Layout, Server, Database, TerminalSqua
 
 const Skills = () => {
   const skills = [
-    { name: 'Languages', description: 'HTML5, CSS3, JavaScript (ES6+)', level: 95, icon: <FileCode2 />, color: 'from-orange-400 to-orange-600' },
-    { name: 'Frontend Tech', description: 'Responsive Design, Flexbox, Grid, DOM Manipulation', level: 90, icon: <Layout />, color: 'from-cyan-400 to-cyan-600' },
-    { name: 'Dev Tools', description: 'Git, GitHub, Netlify, VS Code, REST APIs, JSON', level: 85, icon: <TerminalSquare />, color: 'from-blue-500 to-yellow-500' },
-    { name: 'Soft Skills', description: 'Problem Solving, Team Collaboration, Communication', level: 95, icon: <BrainCircuit />, color: 'from-purple-500 to-pink-500' },
+    { name: 'HTML5', level: 95, icon: <FileCode2 />, color: 'from-orange-400 to-orange-600' },
+    { name: 'CSS3 / Tailwind', level: 90, icon: <Paintbrush />, color: 'from-blue-400 to-blue-600' },
+    { name: 'JavaScript', level: 92, icon: <FileJson />, color: 'from-yellow-400 to-yellow-600' },
+    { name: 'React.js', level: 88, icon: <Layout />, color: 'from-cyan-400 to-cyan-600' },
+    { name: 'Node.js', level: 85, icon: <Server />, color: 'from-green-400 to-green-600' },
+    { name: 'MongoDB', level: 82, icon: <Database />, color: 'from-emerald-400 to-emerald-600' },
+    { name: 'Python', level: 85, icon: <TerminalSquare />, color: 'from-blue-500 to-yellow-500' },
+    { name: 'AI / ML', level: 75, icon: <BrainCircuit />, color: 'from-purple-500 to-pink-500' },
   ];
 
   const containerVariants = {
@@ -42,7 +46,7 @@ const Skills = () => {
             Technical <span className="text-gradient">Arsenal</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-            A comprehensive toolkit for building high-performance, responsive web applications.
+            A comprehensive toolkit for building high-performance web applications and intelligent systems.
           </p>
         </motion.div>
 
@@ -72,8 +76,7 @@ const Skills = () => {
                 </div>
                 
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-1">{skill.name}</h3>
-                  <p className="text-xs text-gray-400 mb-3 h-8 leading-tight">{skill.description}</p>
+                  <h3 className="text-xl font-semibold text-white mb-3">{skill.name}</h3>
                   
                   {/* Progress Bar Container */}
                   <div className="h-1.5 w-full bg-white/10 rounded-full overflow-hidden">

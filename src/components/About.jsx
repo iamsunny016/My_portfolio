@@ -37,8 +37,8 @@ const AnimatedCounter = ({ from, to, duration, suffix = '' }) => {
 
 const About = () => {
   const stats = [
-    { label: 'Projects Deployed', value: 3, suffix: '+', icon: <Code className="text-neon-blue" size={24} /> },
-    { label: 'Frontend Tools', value: 12, suffix: '+', icon: <Brain className="text-neon-purple" size={24} /> },
+    { label: 'Projects Completed', value: 24, suffix: '+', icon: <Code className="text-neon-blue" size={24} /> },
+    { label: 'Technologies Mastered', value: 15, suffix: '+', icon: <Brain className="text-neon-purple" size={24} /> },
     { label: 'Problem Solving Hours', value: 1200, suffix: '+', icon: <Target className="text-pink-500" size={24} /> },
     { label: 'Cups of Coffee', value: 450, suffix: '+', icon: <Coffee className="text-orange-400" size={24} /> },
   ];
@@ -100,15 +100,15 @@ const About = () => {
             className="flex flex-col gap-6"
           >
             <h3 className="text-2xl md:text-3xl font-semibold text-white">
-              Bridging the gap between <span className="text-neon-blue">Design</span> and <span className="text-neon-purple">Code</span>
+              Bridging the gap between <span className="text-neon-blue">Design</span> and <span className="text-neon-purple">Intelligence</span>
             </h3>
             
             <p className="text-gray-400 leading-relaxed text-lg">
-              Motivated B.Tech (CSE) fresher and passionate Frontend Developer with hands-on experience building responsive, user-centric web applications using HTML5, CSS3, and JavaScript.
+              I'm Rajnish Kumar, a passionate Full Stack Developer with a strong focus on building AI-driven applications and visually stunning web experiences. I believe that powerful technology should be paired with intuitive, premium design.
             </p>
             
             <p className="text-gray-400 leading-relaxed text-lg mb-4">
-              Demonstrated ability to develop and deploy 3 fully functional projects including an e-commerce platform, task manager, and weather dashboard. Adept at translating UI/UX concepts into clean, maintainable code. Actively seeking a frontend developer role at a leading MNC to contribute technical skills and grow in an agile, collaborative engineering environment.
+              My journey started with a deep curiosity for how things work on the web, which evolved into a specialization in React, Node.js, and integrating Machine Learning models into robust web platforms.
             </p>
 
             {/* Stats Grid */}

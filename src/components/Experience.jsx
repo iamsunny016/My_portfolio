@@ -6,28 +6,28 @@ const Experience = () => {
   const timeline = [
     {
       id: 1,
-      title: 'Frontend Developer',
-      institution: 'Self-Initiated Projects & Freelance',
-      date: '2024 - Present',
-      description: 'Designed, developed, and deployed 3+ web projects end-to-end from wireframe to production using modern frontend stack. Followed industry best practices: Git branching strategy, semantic HTML, CSS BEM methodology, and Netlify CI/CD pipelines.',
-      icon: <Code2 size={24} />,
+      title: 'B.Tech in Computer Science Engineering',
+      institution: 'Greater Noida Institute of Technology',
+      date: '2022 - 2026',
+      description: 'Building a strong foundation in computer science principles, data structures, algorithms, and software engineering methodologies.',
+      icon: <GraduationCap size={24} />,
       color: 'neon-blue'
     },
     {
       id: 2,
-      title: 'B.Tech — Computer Science & Engineering',
-      institution: 'GNIOT, Greater Noida (AKTU)',
-      date: '2021 - 2025',
-      description: 'Relevant Coursework: Data Structures & Algorithms, Web Technologies, DBMS, Computer Networks, OOP, Operating Systems, Software Engineering. Completed self-initiated full-stack web projects during coursework.',
-      icon: <GraduationCap size={24} />,
+      title: 'Full Stack Development Journey',
+      institution: 'Self-Taught & Projects',
+      date: '2025 - Present',
+      description: 'Mastered modern web technologies including React, Node.js, and Tailwind CSS. Built multiple responsive and dynamic web applications from scratch.',
+      icon: <Code2 size={24} />,
       color: 'neon-purple'
     },
     {
       id: 3,
-      title: 'Certifications & Achievements',
-      institution: 'freeCodeCamp & Figma',
-      date: 'Continuous Learning',
-      description: 'Earned certifications in Responsive Web Design (HTML5, CSS3, Grid), JavaScript Algorithms & Data Structures, and UI/UX Design Fundamentals. Successfully deployed 3 live projects on Netlify with CI/CD pipelines.',
+      title: 'AI & Machine Learning Focus',
+      institution: 'Applied Projects',
+      date: '2025 - Present',
+      description: 'Integrating artificial intelligence into web platforms. Developed a House Price Prediction model and a RAG-based AI voice assistant.',
       icon: <BrainCircuit size={24} />,
       color: 'pink-500'
     }
