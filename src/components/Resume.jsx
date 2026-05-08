@@ -2,8 +2,18 @@ import React from 'react';
 
 const Resume = () => {
   return (
-    <div className="min-h-screen bg-gray-200 py-10 flex justify-center font-sans" style={{ fontFamily: 'Calibri, system-ui, sans-serif' }}>
-      <div className="w-[210mm] min-h-[297mm] bg-white text-black p-12 shadow-2xl text-[10.5pt] leading-[1.4] flex flex-col box-border">
+    <div className="min-h-screen bg-gray-200 py-10 flex justify-center font-sans relative" style={{ fontFamily: 'Calibri, system-ui, sans-serif' }}>
+      
+      {/* Floating Download Button (hidden when printing) */}
+      <button 
+        onClick={() => window.print()}
+        className="fixed top-8 right-8 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow-lg print:hidden flex items-center gap-2 transition-colors z-50"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        Download PDF
+      </button>
+
+      <div className="w-[210mm] min-h-[297mm] bg-white text-black p-12 shadow-2xl text-[10.5pt] leading-[1.4] flex flex-col box-border print:shadow-none print:p-0">
         {/* Header */}
         <header className="mb-4">
           <h1 className="text-[28pt] leading-none font-bold text-gray-900 mb-1 tracking-wider uppercase">Rajnish Singh</h1>
