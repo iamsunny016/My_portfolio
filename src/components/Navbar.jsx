@@ -11,7 +11,6 @@ const Navbar = () => {
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
     { name: 'Experience', href: '#experience' },
-    { name: 'Contact', href: '#contact' },
   ];
 
   useEffect(() => {
@@ -54,12 +53,22 @@ const Navbar = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-neon-blue to-neon-purple transition-all duration-300 group-hover:w-full rounded-full"></span>
             </a>
           ))}
-          <a
-            href="#contact"
-            className="px-5 py-2 rounded-full border border-white/20 hover:border-neon-blue/50 bg-white/5 hover:bg-neon-blue/10 text-sm font-medium transition-all"
-          >
-            Let's Talk
-          </a>
+          <div className="flex items-center gap-4 ml-2">
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+            >
+              Resume
+            </a>
+            <a
+              href="#contact"
+              className="px-5 py-2 rounded-full border border-white/20 hover:border-neon-blue/50 bg-white/5 hover:bg-neon-blue/10 text-sm font-medium transition-all"
+            >
+              Let's Talk
+            </a>
+          </div>
         </nav>
 
         {/* Mobile Nav Toggle */}
