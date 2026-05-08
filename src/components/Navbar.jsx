@@ -55,7 +55,7 @@ const Navbar = () => {
           ))}
           <div className="flex items-center gap-4 ml-2">
             <a
-              href="/resume.html"
+              href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
@@ -102,7 +102,7 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="/resume.html"
+                href="/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
