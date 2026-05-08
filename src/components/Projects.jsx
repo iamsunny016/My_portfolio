@@ -105,11 +105,11 @@ const Projects = () => {
 
                 {/* Action Buttons */}
                 <div className="flex items-center gap-4 mt-auto pt-4 border-t border-white/10">
-                  <a href={project.demo} className="flex items-center gap-2 text-sm font-semibold text-white hover:text-neon-blue transition-colors">
+                  <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-white hover:text-neon-blue transition-colors">
                     <ExternalLink size={16} />
                     Live Demo
                   </a>
-                  <a href={project.github} className="flex items-center gap-2 text-sm font-semibold text-gray-400 hover:text-white transition-colors ml-4">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-gray-400 hover:text-white transition-colors ml-4">
                     <Github size={16} />
                     Source Code
                   </a>
