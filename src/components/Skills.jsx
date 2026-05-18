@@ -32,8 +32,8 @@ const Skills = () => {
   return (
     <section id="skills" className="py-24 relative overflow-hidden bg-[#020203]">
       {/* Background glow */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-neon-blue/10 rounded-full blur-[150px] pointer-events-none"></div>
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-neon-purple/10 rounded-full blur-[150px] pointer-events-none"></div>
+      <div className="hidden md:block absolute top-0 right-0 w-[500px] h-[500px] bg-neon-blue/10 rounded-full blur-[150px] pointer-events-none"></div>
+      <div className="hidden md:block absolute bottom-0 left-0 w-[500px] h-[500px] bg-neon-purple/10 rounded-full blur-[150px] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         <motion.div 

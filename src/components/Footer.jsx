@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="relative border-t border-white/10 bg-[#020203] pt-16 pb-8 overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-neon-blue to-transparent opacity-50"></div>
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[300px] h-[150px] bg-neon-blue/20 blur-[80px] pointer-events-none"></div>
+      <div className="hidden md:block absolute top-0 left-1/2 -translate-x-1/2 w-[300px] h-[150px] bg-neon-blue/20 blur-[80px] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 flex flex-col items-center">
         

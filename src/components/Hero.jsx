@@ -26,8 +26,8 @@ const Hero = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       {/* Ambient Background Elements */}
-      <div className="absolute top-1/4 left-1/4 w-[80vw] h-[80vw] md:w-[40vw] md:h-[40vw] bg-neon-purple/20 rounded-full blur-[120px] mix-blend-screen animate-pulse-slow"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-[70vw] h-[70vw] md:w-[35vw] md:h-[35vw] bg-neon-blue/20 rounded-full blur-[100px] mix-blend-screen" style={{ animation: 'pulse 8s infinite alternate' }}></div>
+      <div className="hidden md:block absolute top-1/4 left-1/4 w-[40vw] h-[40vw] bg-neon-purple/20 rounded-full blur-[120px] mix-blend-screen animate-pulse-slow"></div>
+      <div className="hidden md:block absolute bottom-1/4 right-1/4 w-[35vw] h-[35vw] bg-neon-blue/20 rounded-full blur-[100px] mix-blend-screen" style={{ animation: 'pulse 8s infinite alternate' }}></div>
       
       {/* Optional Grid Overlay for Tech feel */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] [mask-image:radial-gradient(ellipse_at_center,black,transparent_80%)] opacity-50"></div>
