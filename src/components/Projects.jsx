@@ -16,8 +16,9 @@ const Projects = () => {
       title: 'Aarogya Clinic Booking System',
       description: 'Premium Appointment Booking System. Features a modern Next.js UI, automated patient & doctor email alerts with Google Calendar reminders, and a powerful Admin Dashboard.',
       image: 'bg-gradient-to-br from-emerald-900 via-teal-900 to-black',
+      imageUrl: '/aarogya-clinic.png',
       tech: ['Next.js', 'MongoDB', 'Resend', 'Tailwind CSS'],
-      demo: '#',
+      demo: 'https://clinic-three-psi.vercel.app/',
       github: 'https://github.com/iamsunny016/Clinic'
     },
     {
@@ -70,19 +71,29 @@ const Projects = () => {
               className="group relative rounded-3xl overflow-hidden glass-card border border-white/10 hover:border-white/30 transition-all duration-500 hover:shadow-[0_0_40px_rgba(0,240,255,0.15)] flex flex-col h-full"
             >
               {/* Image / Mockup Area */}
-              <div className={`w-full h-64 ${project.image} relative overflow-hidden`}>
-                {/* Overlay Pattern */}
-                <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIvPjwvc3ZnPg==')] opacity-30"></div>
+              <div className={`w-full h-64 ${project.image} relative overflow-hidden group-hover:border-b border-white/5`}>
+                {project.imageUrl ? (
+                  <img 
+                    src={project.imageUrl} 
+                    alt={project.title} 
+                    className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
+                  />
+                ) : (
+                  <>
+                    {/* Overlay Pattern */}
+                    <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIvPjwvc3ZnPg==')] opacity-30"></div>
+                    
+                    {/* Floating Mockup Abstract shape */}
+                    <motion.div 
+                      className="absolute inset-4 rounded-xl border border-white/20 bg-white/5 backdrop-blur-sm flex items-center justify-center shadow-2xl group-hover:scale-105 transition-transform duration-700 ease-out"
+                    >
+                       <Sparkles className="text-white/30 w-16 h-16 group-hover:text-neon-blue/60 transition-colors duration-500" />
+                    </motion.div>
+                  </>
+                )}
                 
-                {/* Floating Mockup Abstract shape */}
-                <motion.div 
-                  className="absolute inset-4 rounded-xl border border-white/20 bg-white/5 backdrop-blur-sm flex items-center justify-center shadow-2xl group-hover:scale-105 transition-transform duration-700 ease-out"
-                >
-                   <Sparkles className="text-white/30 w-16 h-16 group-hover:text-neon-blue/60 transition-colors duration-500" />
-                </motion.div>
-                
-                {/* Glassmorphism gradient overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#030305] via-transparent to-transparent opacity-80"></div>
+                {/* Glassmorphism gradient overlay to blend with card */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#030305] via-[#030305]/20 to-transparent opacity-90"></div>
               </div>
 
               {/* Content Area */}
