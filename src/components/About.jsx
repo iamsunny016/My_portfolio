@@ -67,23 +67,13 @@ const About = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative w-[85%] max-w-[320px] mx-auto md:w-full md:max-w-none aspect-square md:aspect-[4/3] lg:aspect-[4/5] xl:aspect-square rounded-3xl overflow-hidden glass-card p-2 group"
+            className="relative w-[85%] max-w-[320px] mx-auto md:w-full md:max-w-none aspect-square md:aspect-[4/3] lg:aspect-[4/5] xl:aspect-square rounded-3xl overflow-hidden group shadow-2xl"
           >
-            {/* Inner image container */}
-            <div className="w-full h-full rounded-[1.2rem] overflow-hidden relative bg-dark-bg">
-              {/* Profile Image */}
-              <img 
-                src="/profile.jpg" 
-                alt="Rajnish Kumar" 
-                className="w-full h-full object-cover relative z-10"
-              />
-              
-              {/* Subtle overlay for better blending */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#030305]/60 to-transparent z-20"></div>
-            </div>
-            
-            {/* Glowing effect behind the card */}
-            <div className="absolute -inset-1 bg-gradient-to-r from-neon-blue to-neon-purple rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-1000 -z-10"></div>
+            <img 
+              src="/profile.jpg" 
+              alt="Rajnish Kumar" 
+              className="w-full h-full object-cover"
+            />
           </motion.div>
 
           {/* Content Side */}
