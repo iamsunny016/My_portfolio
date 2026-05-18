@@ -151,7 +151,7 @@ const Contact = () => {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.05 }}
             className="lg:col-span-3"
           >
             <div className="glass-card p-6 md:p-8 h-full">

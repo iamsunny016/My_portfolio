@@ -66,7 +66,7 @@ const Projects = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.3, delay: index * 0.05 }}
               className="group relative rounded-3xl overflow-hidden glass-card border border-white/10 hover:border-white/30 transition-all duration-500 hover:shadow-[0_0_40px_rgba(0,240,255,0.15)] flex flex-col h-full"
             >
               {/* Image / Mockup Area */}

@@ -91,7 +91,7 @@ const About = () => {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.05 }}
             className="flex flex-col gap-6"
           >
             <h3 className="text-2xl md:text-3xl font-semibold text-white">

@@ -85,7 +85,7 @@ const Skills = () => {
                       initial={{ width: 0 }}
                       whileInView={{ width: `${skill.level}%` }}
                       viewport={{ once: true }}
-                      transition={{ duration: 1.5, delay: 0.2 + (index * 0.1), ease: "easeOut" }}
+                      transition={{ duration: 0.8, delay: index * 0.05, ease: "easeOut" }}
                       className={`h-full rounded-full bg-gradient-to-r ${skill.color} shadow-[0_0_10px_rgba(255,255,255,0.5)]`}
                     />
                   </div>
