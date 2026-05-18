@@ -63,7 +63,7 @@ const Contact = () => {
 
   const socials = [
     { name: 'Email', icon: <Mail size={20} />, href: 'mailto:m.scrajnish@gmail.com', color: 'hover:text-red-400' },
-    { name: 'LinkedIn', icon: <LinkedinIcon size={20} />, href: 'https://linkedin.com/in/iamsunny016', color: 'hover:text-blue-500' },
+    { name: 'LinkedIn', icon: <LinkedinIcon size={20} />, href: 'https://www.linkedin.com/in/rajnish-kumar-763655248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', color: 'hover:text-blue-500' },
     { name: 'WhatsApp', icon: <WhatsappIcon size={20} />, href: 'https://wa.me/918757577586', color: 'hover:text-green-500' },
     { name: 'GitHub', icon: <GithubIcon size={20} />, href: 'https://github.com/iamsunny016', color: 'hover:text-white' },
   ];

@@ -71,20 +71,15 @@ const About = () => {
           >
             {/* Inner image container */}
             <div className="w-full h-full rounded-[1.2rem] overflow-hidden relative bg-dark-bg">
-              {/* Using a futuristic abstract gradient as placeholder */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#0f172a] via-[#1e1b4b] to-[#020617] opacity-80 z-0"></div>
+              {/* Profile Image */}
+              <img 
+                src="/profile.jpg" 
+                alt="Rajnish Kumar" 
+                className="w-full h-full object-cover relative z-10"
+              />
               
-              {/* Overlay animated shapes */}
-              <div className="absolute inset-0 flex items-center justify-center opacity-40 z-10">
-                <div className="w-64 h-64 border border-neon-blue/30 rounded-full animate-[spin_10s_linear_infinite]"></div>
-                <div className="absolute w-48 h-48 border border-neon-purple/30 rounded-full animate-[spin_7s_linear_infinite_reverse]"></div>
-                <div className="absolute w-32 h-32 border border-white/10 bg-white/5 backdrop-blur-sm rounded-full flex items-center justify-center">
-                  <Code size={40} className="text-neon-blue" />
-                </div>
-              </div>
-
-              {/* Grid pattern overlay */}
-              <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIvPjwvc3ZnPg==')] z-20"></div>
+              {/* Subtle overlay for better blending */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#030305]/60 to-transparent z-20"></div>
             </div>
             
             {/* Glowing effect behind the card */}
