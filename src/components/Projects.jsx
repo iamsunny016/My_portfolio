@@ -33,8 +33,9 @@ const Projects = () => {
       title: 'Premium Portfolio',
       description: 'This very website. A futuristic, cinematic portfolio designed to showcase projects with high-end micro-interactions and smooth scrolling.',
       image: 'bg-gradient-to-br from-gray-800 via-gray-900 to-black',
+      imageUrl: '/premium-portfolio.png',
       tech: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion'],
-      demo: '#',
+      demo: 'https://www.rajnishportfolio.space/',
       github: 'https://github.com/iamsunny016/My_portfolio'
     }
   ];
