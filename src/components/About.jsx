@@ -67,7 +67,7 @@ const About = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative w-full aspect-square md:aspect-[4/3] lg:aspect-square rounded-3xl overflow-hidden glass-card p-2 group"
+            className="relative w-[85%] max-w-[320px] mx-auto md:w-full md:max-w-none aspect-square md:aspect-[4/3] lg:aspect-[4/5] xl:aspect-square rounded-3xl overflow-hidden glass-card p-2 group"
           >
             {/* Inner image container */}
             <div className="w-full h-full rounded-[1.2rem] overflow-hidden relative bg-dark-bg">
