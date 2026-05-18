@@ -8,8 +8,9 @@ const Projects = () => {
       title: 'Grihmullya - AI House Price Prediction',
       description: 'A high-fidelity property intelligence suite. Features a Pan-India Neural Engine for precise price predictions, AI-driven architectural renders, and automated valuation reports.',
       image: 'bg-gradient-to-br from-indigo-900 via-purple-900 to-black',
+      imageUrl: '/grihamulya-project.jpg',
       tech: ['Next.js', 'FastAPI', 'Python', 'Machine Learning', 'Tailwind'],
-      demo: '#',
+      demo: 'https://www.rajnishportfolio.space/',
       github: 'https://github.com/iamsunny016/Grihmullya-House_price_prediction'
     },
     {
